@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Larissa Barcellos</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Larissa Barcellos</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Larissa Barcellos</h1>
+        <p class="section__text__p2">Backend Developer</p>
+        <div class="btn-container">
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/larissa-barcellos-5b4275284/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/larissadcew'"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+  <p class="section__text__p1">Get To Know More</p>
+  <h1 class="title">About Me</h1>
+  <div class="section-container">
+    <div class="about-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <img
+            src="./assets/experience.png"
+            alt="Experience icon"
+            class="icon"
+          />
+          <h3>Experience</h3>
+          <p>1+ years <br />Backend developer</p>
+        </div>
+        <div class="details-container">
+          <img
+            src="./assets/education.png"
+            alt="Education icon"
+            class="icon"
+          />
+          <h3>Education - Harvard University</h3>
+          <p>CS50’s Introduction to Computer Science<br />CS50’s Web Programming with Python and JavaScript</p>
+        </div>
+      </div>
+      <div class="text-container">
+        <p>
+          I am 19 years old and a dedicated software developer, educated through Harvard's programming courses. Throughout my learning journey, I have developed strong skills in solving practical problems and applying them effectively in real projects. I am always looking for new opportunities to expand my knowledge and make meaningful contributions. I believe programming is a powerful tool to create a positive impact on people's lives and society. I seek a company that values innovation and is committed to making a difference, where I can contribute my skills and grow with the team.
+        </p>
+      </div>
+    </div>
+  </div>
+  <img
+    src="./assets/arrow.png"
+    alt="Arrow icon"
+    class="icon arrow"
+    onclick="location.href='./#experience'"
+  />
+</section>
+
+
+<section id="experience">
+  <p class="section__text__p1">Explore My</p>
+  <h1 class="title">Experience</h1>
+  <div class="experience-details-container">
+    <div class="about-containers">
+      <div class="details-container custom-width"> <!-- Adicione esta classe -->
+        <h2 class="experience-sub-title">Backend Development</h2>
+        <div class="article-container">
+          <article>
+            <img
+              src="./assets/checkmark.png"
+              alt="Experience icon"
+              class="icon"
+            />
+            <div>
+              <h3>HTML</h3>
+            </div>
+          </article>
+          <article>
+            <img
+              src="./assets/checkmark.png"
+              alt="Experience icon"
+              class="icon"
+            />
+            <div>
+              <h3>CSS</h3>
+            </div>
+          </article>
+          <article>
+            <img
+              src="./assets/checkmark.png"
+              alt="Experience icon"
+              class="icon"
+            />
+            <div>
+              <h3>SASS</h3>
+            </div>
+          </article>
+          <article>
+            <img
+              src="./assets/checkmark.png"
+              alt="Experience icon"
+              class="icon"
+            />
+            <div>
+              <h3>JavaScript</h3>
+            </div>
+          </article>
+          <article>
+            <img
+              src="./assets/checkmark.png"
+              alt="Experience icon"
+              class="icon"
+            />
+            <div>
+              <h3>Python</h3>
+            </div>
+          </article>
+          <article>
+            <img
+              src="./assets/checkmark.png"
+              alt="Experience icon"
+              class="icon"
+            />
+            <div>
+              <h3>Django</h3>
+            </div>
+          </article>
+          <article>
+            <img
+              src="./assets/checkmark.png"
+              alt="Experience icon"
+              class="icon"
+            />
+            <div>
+              <h3>PostgreSQL</h3>
+            </div>
+          </article>
+          <article>
+            <img
+              src="./assets/checkmark.png"
+              alt="Experience icon"
+              class="icon"
+            />
+            <div>
+              <h3>Git</h3>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<img
+  src="./assets/arrow.png"
+  alt="Arrow icon"
+  class="icon arrow"
+  onclick="location.href='./#projects'"
+/>
+</section>
+
+<section id="projects">
+  <p class="section__text__p1">Browse My Recent</p>
+  <h1 class="title">Projects</h1>
+  <div class="experience-details-container">
+    <div class="about-containers">
+      
+      <!-- Project One -->
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img src="./assets/curricun.png" alt="Project 1" class="project-img" style="position: relative; left: 65px;"/>
+        </div>
+        <h2 class="experience-sub-title project-title">Project One</h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/larissadcew/curricin/tree/main'">
+            Github
+          </button>
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://curricin.vercel.app/'">
+            Live Demo
+          </button>
+        </div>
+      </div>
+      
+      <!-- Project Two -->
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img src="./assets/GBT.png" alt="Project 2" class="project-img" style="position: relative; left: 65px;" />
+        </div>
+        <h2 class="experience-sub-title project-title">Project Two</h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/larissadcew/GBT/tree/main'">
+            Github
+          </button>
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://gbt-3.onrender.com'">
+            Live Demo
+          </button>
+        </div>
+      </div>
+      
+      <!-- Project Three -->
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img src="./assets/rep.png" alt="Project 2" class="project-img" style="position: relative; left: 65px;" />
+        </div>
+        <h2 class="experience-sub-title project-title">Project Three</h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/larissadcew/rec/tree/main'">
+            Github
+          </button>
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://rec-1-0vr4.onrender.com'">
+            Live Demo
+          </button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+</section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:barcellos_job@outlook.com">barcellos_job@outlook.com
+            @outlook.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/larissa-barcellos-5b4275284/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
